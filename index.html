@@ -4,45 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio - Arthur Nunes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Issets/Styles/index.css" />
   </head>
   <body>
     <header>
-      <h1>Meu Portfólio</h1>
-      <p>
-        <strong>Nome:</strong> Arthur Nunes Berti Xavier |
-        <strong>Idade:</strong> 20 anos
-      </p>
-      <p>
-        <strong>Curso:</strong> Análise e Desenvolvimento de Sistemas (ADS -
-        Faesa) | <strong>Período:</strong> 4º Período
-      </p>
+      <div class="header-itens container">
+        <a href="#sobre" class="title-mp">
+          <span class="logo">AN</span>
+          <span class="logo-nome">Arthur Nunes</span>
+        </a>
 
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre Mim</a></li>
-          <li><a href="#formacao">Formação</a></li>
-          <li><a href="#conhecimentos">Conhecimentos</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+        <nav class="navbar">
+          <ul class="topicos">
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#conhecimentos">Conhecimentos</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato" class="btn">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>
-          Olá! Sou o Arthur Nunes Berti Xavier, estudante do 4º período de
-          Análise e Desenvolvimento de Sistemas na Faesa. Sou um entusiasta da
-          tecnologia e desenvolvimento de software, com foco na construção de
-          aplicações web funcionais, organização de banco de dados e resolução
-          de problemas através de código.
-        </p>
+    <main class="container">
+      <section id="sobre" class="hero">
+        <div class="hero-texto">
+          <h1>Olá, eu sou o<br />Arthur Nunes</h1>
+          <p>
+            Estudante do 4º período de Análise e Desenvolvimento de Sistemas na
+            Faesa. Sou entusiasta de tecnologia e desenvolvimento de software,
+            com foco em aplicações web funcionais, organização de banco de
+            dados e resolução de problemas através de código.
+          </p>
+          <a href="#projetos" class="btn">Ver projetos</a>
+
+          <ul class="numeros">
+            <li><strong>20</strong><span>Anos</span></li>
+            <li><strong>4º</strong><span>Período</span></li>
+            <li><strong>3</strong><span>Projetos</span></li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <h2>Arthur Nunes Berti Xavier</h2>
+          <dl>
+            <dt>Curso</dt>
+            <dd>Análise e Desenvolvimento de Sistemas</dd>
+            <dt>Instituição</dt>
+            <dd>Faesa</dd>
+            <dt>Período</dt>
+            <dd>4º Período</dd>
+          </dl>
+        </aside>
       </section>
 
       <section id="formacao">
         <h2>Formação Acadêmica</h2>
-        <ul>
+        <ul class="cards">
           <li>Técnico em Eletrotécnica</li>
           <li>Curso de Computação</li>
           <li>Curso de Framework Adianti e PHP</li>
@@ -51,8 +75,10 @@
 
       <section id="conhecimentos">
         <h2>Conhecimentos</h2>
-        <p>Linguagens, ferramentas e tecnologias que conheço e utilizo:</p>
-        <ul>
+        <p class="intro">
+          Linguagens, ferramentas e tecnologias que conheço e utilizo:
+        </p>
+        <ul class="techs">
           <li>
             <img
               width="50"
@@ -98,48 +124,53 @@
 
       <section id="projetos">
         <h2>Projetos e Experiências</h2>
-        <ul>
+        <ul class="cards">
           <li>
-            <strong>Site - Protocolo de Expedientes:</strong> Sistema para
-            controle e tramitação de documentos organizacionais.
+            <strong>Protocolo de Expedientes</strong>
+            Sistema para controle e tramitação de documentos organizacionais.
           </li>
           <li>
-            <strong>Site - Cadastro de Alunos em Cursos:</strong> Plataforma web
-            para gerenciamento de matrículas e alunos.
+            <strong>Cadastro de Alunos em Cursos</strong>
+            Plataforma web para gerenciamento de matrículas e alunos.
           </li>
           <li>
-            <strong>Site - Cadastro e Pesquisas de Armas:</strong> Aplicação
-            para registro, consulta e controle de acervo.
+            <strong>Cadastro e Pesquisas de Armas</strong>
+            Aplicação para registro, consulta e controle de acervo.
           </li>
         </ul>
       </section>
     </main>
 
     <footer id="contato">
-      <h2>Contato</h2>
-      <ul>
-        <li>
-          E-mail:
-          <a href="mailto:arthurnunesberti@gmail.com"
-            >arthurnunesberti@gmail.com</a
-          >
-        </li>
-        <li>
-          GitHub:
-          <a
-            href="https://github.com/ArthurNunes67"
-            target="_blank"
-            rel="noopener"
-            >github.com/ArthurNunes67</a
-          >
-        </li>
-        <li>
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/arthur-nunes-berti-xavier-60201236a/" target="_blank" rel="noopener"
-            >linkedin.com/in/Arthur-Nunes</a
-          >
-        </li>
-      </ul>
+      <div class="container">
+        <h2>Contato</h2>
+        <ul>
+          <li>
+            E-mail:
+            <a href="mailto:arthurnunesberti@gmail.com"
+              >arthurnunesberti@gmail.com</a
+            >
+          </li>
+          <li>
+            GitHub:
+            <a
+              href="https://github.com/ArthurNunes67"
+              target="_blank"
+              rel="noopener"
+              >github.com/ArthurNunes67</a
+            >
+          </li>
+          <li>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/arthur-nunes-berti-xavier-60201236a/"
+              target="_blank"
+              rel="noopener"
+              >linkedin.com/in/Arthur-Nunes</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
