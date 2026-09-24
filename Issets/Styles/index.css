@@ -86,3 +86,163 @@ nav.navbar ul.topicos li a {
   text-decoration: none;
   color: var(--tinta);
 }
+
+.btn,
+header nav.navbar ul.topicos li a.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  background: var(--destaque);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn:hover,
+header nav.navbar ul.topicos li a.btn:hover {
+  background: var(--tinta);
+  color: #fff;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 5rem 0;
+}
+
+.hero-texto {
+  max-width: 520px;
+}
+
+.hero-texto h1 {
+  font-size: 3.2rem;
+  line-height: 1.15;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-texto p {
+  color: var(--cinza);
+  margin-bottom: 1.6rem;
+}
+
+.numeros {
+  display: flex;
+  gap: 2px;
+  list-style: none;
+  margin-top: 4rem;
+  width: max-content;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.8rem;
+    background: var(--destaque-claro);
+  }
+
+  strong {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  span {
+    font-size: 0.8rem;
+    color: var(--cinza);
+  }
+}
+
+.hero-card {
+  flex-shrink: 0;
+  width: 340px;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(16, 24, 43, 0.08);
+
+  h2 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--linha);
+  }
+
+  dt {
+    font-size: 0.8rem;
+    color: var(--cinza);
+  }
+
+  dd {
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  list-style: none;
+
+  li {
+    padding: 1.4rem;
+    background: #fff;
+    border: 1px solid var(--linha);
+    border-radius: 14px;
+    color: var(--cinza);
+  }
+
+  strong {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--tinta);
+  }
+}
+
+
+.intro {
+  color: var(--cinza);
+  margin-bottom: 1.5rem;
+}
+
+.techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    width: 120px;
+    padding: 1.2rem 0.5rem;
+    background: #fff;
+    border: 1px solid var(--linha);
+    border-radius: 14px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+}
+
+
+footer {
+  margin-top: 3rem;
+  padding: 3rem 0;
+  border-top: 1px solid var(--linha);
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 0.4rem;
+  }
+}
+
